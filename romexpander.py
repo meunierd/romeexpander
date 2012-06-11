@@ -85,8 +85,8 @@ def load_script(txt="ROM Expander Pro.txt"):
     script["patches"] = []
     for op in script["ops"]:
         if op[0] == "REPLACE":
-            op.pop(0)
-            script["patches"].append(op)
+            script["patches"].append(op[1:])
+            script["ops"].remove(op)
 
     return script
 
@@ -144,7 +144,7 @@ def expand_rom(script):
             t.seek(offset)
             t.write(hex_to_bstr(data))
 
-        print "Wrote %s successfully." % (script["target"])
+    print "Wrote %s successfully." % (script["target"])
 
 
 def run(**kwargs):
