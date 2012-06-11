@@ -4,6 +4,10 @@ romexpander 0.4
 ``romexpander`` can be run exactly like ROM Expander Pro,
 otherwise behaviour is overridden by CLI arguments.
 
+Installation::
+
+    pip install romexpander
+
 Usage::
 
     romexpander [options] [INPUT]
