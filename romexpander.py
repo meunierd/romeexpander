@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""romexpander.
+"""romexpander.py
 
 Usage:
-    romexpander [options] [INPUT]
-    romexpander [-h | --help]
-    romexpander [-v | --version]
+    romexpander.py [options] [INPUT]
+    romexpander.py [-h | --help]
+    romexpander.py [-v | --version]
 
 Arguments:
     INPUT                   optional input ROM file.

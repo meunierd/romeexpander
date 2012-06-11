@@ -10,9 +10,9 @@ Installation::
 
 Usage::
 
-    romexpander [options] [INPUT]
-    romexpander [-h | --help]
-    romexpander [-v | --version]
+    romexpander.py [options] [INPUT]
+    romexpander.py [-h | --help]
+    romexpander.py [-v | --version]
 
 Arguments:
     INPUT                   optional input ROM file.
