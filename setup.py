@@ -6,7 +6,12 @@ setup(name="romexpander",
       author_email="devon.meunier@utoronto.ca",
       url="http://www.cdf.utoronto.ca/~g8m/",
       license="MIT",
-      scripts=["romexpander.py"],
+      py_modules=['romexpander'],
+      entry_points={
+          'console_scripts': [
+              "romexpander = romexpander:main",
+          ],
+      },
       description="NES ROM Expansion script compatible with DvD's " \
                   "ROM Expander Pro.",
       long_description=open("README").read(),
