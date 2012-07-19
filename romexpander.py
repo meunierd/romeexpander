@@ -141,7 +141,7 @@ def expand_rom(script):
         for patch in script["patches"]:
             offset = eval("0x" + patch.pop(0))
             data = "".join(["0" * (2 - len(x)) + x for x in patch])
-            t.seek(offset)
+            t.seek(offset + script['header_size'])
             t.write(hex_to_bstr(data))
 
     print "Wrote %s successfully." % (script["target"])
