@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name="romexpander",
-      version="0.4",
+      version="0.5",
       author="Devon Meunier",
       author_email="devon.meunier@utoronto.ca",
       url="http://www.cdf.utoronto.ca/~g8m/",
